@@ -18,17 +18,19 @@ body {
 }
 
 
+
+
 /*
  * Sidebar
  */
 
 /* Hide for mobile, show later */
 .sidebar {
-  /*display: none;*/    /*Hides Sidebar with small screens, turning off fills a small screen*/
+  display: none;    /*Hides Sidebar with small screens, turning off fills a small screen*/
 }
 @media (min-width: 768px) {
   .sidebar {
-    position: fixed;
+    position: fixed;  /* Can change to "static" */
     top: 51px;
     bottom: 0;
     left: 0;
@@ -51,6 +53,7 @@ body {
 .nav-sidebar > li > a {
   padding-right: 20px;
   padding-left: 20px;
+  text-align: center;
 }
 .nav-sidebar > .active > a {
   color: #fff;
@@ -87,16 +90,16 @@ body {
  */
 
 .placeholders {             /*Clothing Model Placement Margins*/
-  margin-bottom: 30px;  
+  margin-bottom: 10px;      /*Margin between Picture Rows*/
   text-align: center;
 }
 .placeholders h4 {
   margin-bottom: 0;
 }
 .placeholder {
-  margin-bottom: 20px;
+  margin-bottom: 0px;      /*Margin for individual Picture Columns*/
 }
 .placeholder img {
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 10%;     /*Rounds Corners of an Object*/
 }
