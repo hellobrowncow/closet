@@ -1,4 +1,4 @@
 closet
 ======
 
-Closet
+A virtual app that organizes your clothing. 
