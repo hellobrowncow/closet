@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>PMC - Stash Your Threads Online</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Dashboard%20Template%20for%20Bootstrap_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this templadte -->
+    <link href="Dashboard%20Template%20for%20Bootstrap_files/dashboard.css" rel="stylesheet">
+
+    
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css" id="holderjs-style"></style></head>
+
+  <body>
+
+    <div class="navbar  navbar-fixed-top navbar-inverse" role="navigation">  
+    <!-- Top Menu Bar: "fixed" stays on top, "static" moves with content -->
+    <!-- "navbar-inverse" inverts navbar bgcolor from normal bgcolor --> 
+      <div class="container-fluid">  <!-- Bootstrap 2-column nav & body, not fixed width-->
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">     <!-- Controls Navigation Bar including Collapse-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <!-- Provide the three white lines on the the collapsible button -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P M C</a> <!-- Left Corner App Title -->
+        </div>
+
+<!-- <div class="navbar col-md-1">
+
+</div> -->
+
+        <div class="navbar-collapse collapse">    
+        <!-- Collects and Controls Right Navigation for Collapsible Hamburger -->
+
+          <form class="navbar-form navbar-right">  <!-- Deleted navbar-right -->
+            <input class="form-control" placeholder="Search My Clothing..." aligntype="search" >
+          </form>
+
+
+          <ul class="nav  nav-pills navbar-right"> <!-- navbar-nav -->
+              <li class="dropdown">    
+
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    My Wardrobes <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">
+                          <span class="badge pull-right">0</span>
+                          Travel Bag</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li><a href="#">
+                          <span class="badge pull-right">25</span>
+                          Hong Kong</a></li>
+                      <li><a href="#">
+                          <span class="badge pull-right">100</span>
+                          Alaska</a></li>
+                  </ul>
+
+              <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Help <span class="caret"></span>
+                          </a>
+                  <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FAQs</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Site Map</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Report a Problem</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Support</a></li>
+                  </ul>
+<!--             <li><a href="#">Help</a></li> -->
+          </ul>
+
+        </div>
+   
+      </div>
+    </div>
+
+    <div class="container-fluid"> <!-- Side Menu Bar and Display Menu, Possibly Auto-hidden when screen is shrunk-->
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">   <!-- Controls width of sidebar DEFAULT:2-->
+
+          <ul class="nav nav-pills nav-stacked">                 <!-- First Navigation Section -->
+           <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <!-- <li> class="active"> -->
+                Clothing Type<span class="caret"></span>
+                <!-- </li> -->
+              </a>
+                      <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tops
+                      <input type="checkbox" name="tops" value="checked">
+                      </a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bottoms
+                      <input type="checkbox" name="bottoms" value="checked">
+                      </a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kicks
+                      <input type="checkbox" name="footwear" value="">
+                      </a></li>
+                      </ul>
+<!--             <li><a href="#">Tops</a></li>
+<li><a href="#">Bottoms</a></li>
+<li><a href="#">Kicks</a></li> -->
+          </ul>
+<p></p>
+          <ul class="nav nav-pills nav-stacked">                 <!-- Second Navigation Section -->
+           <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <!-- <li> class="active"> -->
+                Edit/View<span class="caret"></span>
+                <!-- </li> -->
+              </a>
+                      <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Brighten</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crop</a></li>
+                      </ul>
+          </ul>                      
+
+<p></p>
+          <ul class="nav nav-pills nav-stacked">                 <!-- Third Navigation Section -->
+           <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <!-- <li> class="active"> -->
+                Sort<span class="caret"></span>
+                <!-- </li> -->
+              </a>
+                      <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Color</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Style</a></li>
+                      </ul>
+          </ul> 
+
+<p></p>
+          <ul class="nav nav-pills nav-stacked">                 <!-- Fourth Navigation Section -->
+           <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <!-- <li> class="active"> -->
+                Social<span class="caret"></span>
+                <!-- </li> -->
+              </a>
+                      <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                      <span class="badge pull-right">25</span>
+                      Friends</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Share</a></li>
+                      </ul>
+          </ul> 
+
+<p></p>
+          <ul class="nav nav-pills nav-stacked">                 <!-- Third Navigation Section -->
+           <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <!-- <li> class="active"> -->
+                BUY<span class="caret"></span>
+                <!-- </li> -->
+              </a>
+                      <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shop Online</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shop Near You</a></li>
+                      </ul>
+          </ul> 
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">   
+
+        <!-- Controls Main Display Section -->
+        <!-- "offset-X": offsets main area to the right, where X = col-md-X in sidebar above -->
+ 
+<div class="container-fluid">
+<!--           <h2 class="page-header">My Clothing</h2> -->
+
+          <div class="row placeholders">      <!-- Clothing Models Top-->
+
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<div class="container">
+
+  <div class="row">
+
+  </div>
+</div>
+
+<ul class="pager">
+  <li class="previous"><a href="#">&larr; </a></li>
+</ul>
+</div>
+
+            <div class="col-xs-6 col-sm-3 placeholder"> 
+              <h4>Clothing Sample 1</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+                    <a href="#" class="thumbnail">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Clothing Sample 2</h4>
+              <span class="text-muted">Brief Clothing Description</span>            
+                    <a href="#" class="thumbnail">            
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Clothing Sample 3</h4>
+              <span class="text-muted">Brief Clothing Description</span>            
+                    <a href="#" class="thumbnail">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+
+  <li class="next"><a href="#"> &rarr;</a></li>
+</ul> 
+</div>
+
+<!--             <div class="col-xs-6 col-sm-3 placeholder">
+        <a href="#" class="thumbnail">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+        </a>
+  <h4>Clothing Sample 4</h4>
+  <span class="text-muted">Brief Clothing Description</span>
+</div> -->
+          </div>
+
+          <div class="row placeholders">      <!-- Clothing Models Bottom-->
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+  <li class="previous"><a href="#">&larr; </a></li>
+<!--   <li class="next"><a href="#"> &rarr;</a></li> -->
+</ul> 
+</div>
+
+            <div class="col-xs-6 col-sm-3  placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample A</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample B</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample C</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+
+  <li class="next"><a href="#"> &rarr;</a></li>
+</ul> 
+</div>           
+<!--             <div class="col-xs-6 col-sm-3 placeholder">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+  <h4>Clothing Sample 4</h4>
+  <span class="text-muted">Brief Clothing Description</span>
+</div> -->
+          </div>
+</div>
+<!--           <h2 class="sub-header">Clothing Info/Specs</h2> -->  <!-- Bottom Sub-Header --> 
+          <!-- <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/jquery.js"></script>
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/bootstrap.js"></script>
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/docs.js"></script>
+  
+
+</body></html>

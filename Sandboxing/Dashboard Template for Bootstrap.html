@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>PMC - Stash Your Threads Online</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Dashboard%20Template%20for%20Bootstrap_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this templadte -->
+    <link href="Dashboard%20Template%20for%20Bootstrap_files/dashboard.css" rel="stylesheet">
+
+
+
+    <!-- ARRRHHHH HERE BE THE TEST SCRIPTS!!!!! -->
+
+  <link href="css/start/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.js"></script>
+  <script>
+
+
+  $(function() {      //Beginning of Anonymous Function Wrapper for jQueryUI widgets
+    
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+
+    })
+
+
+    
+
+    
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#autocomplete" ).autocomplete({
+      source: availableTags
+    });
+    
+
+    
+    $( "#button" ).button();
+    $( "#radioset" ).buttonset();
+    
+
+    
+    $( "#tabs" ).tabs();
+    
+
+    
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      width: 400,
+      buttons: [
+        {
+          text: "Ok",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        },
+        {
+          text: "Cancel",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ]
+    });
+
+    // Link to open the dialog
+    $( "#dialog-link" ).click(function( event ) {
+      $( "#dialog" ).dialog( "open" );
+      event.preventDefault();
+    });
+    
+
+    
+    $( "#datepicker" ).datepicker({
+      inline: true
+    });
+    
+
+    
+    $( "#slider" ).slider({
+      range: true,
+      values: [ 17, 67 ]
+    });
+    
+
+    
+    $( "#progressbar" ).progressbar({
+      value: 20
+    });
+    
+
+    // Hover states on the static widgets
+    $( "#dialog-link, #icons li" ).hover(
+      function() {
+        $( this ).addClass( "ui-state-hover" );
+      },
+      function() {
+        $( this ).removeClass( "ui-state-hover" );
+      }
+    );
+  });
+  </script>
+  <style>
+  body{
+    font: 62.5% "Trebuchet MS", sans-serif;
+    margin: 50px;
+  }
+  .demoHeaders {
+    margin-top: 2em;
+  }
+  #dialog-link {
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  #dialog-link span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px;
+  }
+  #icons {
+    margin: 0;
+    padding: 0;
+  }
+  #icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+  }
+  #icons span.ui-icon {
+    float: left;
+    margin: 0 4px;
+  }
+  .fakewindowcontain .ui-widget-overlay {
+    position: absolute;
+  }
+  </style>
+
+<!-- 1.  DRAGGABLE OBJECTS Can't really test, looks the same a drag-and-drop -->
+
+<!-- 2.  ACCORDIAN MENU -->
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+$(function() {
+$( "#accordion" ).accordion({
+
+});
+});
+</script>
+
+
+
+
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css" id="holderjs-style"></style></head>
+
+  <body>
+
+    <div class="navbar  navbar-fixed-top navbar-inverse" role="navigation">  
+    <!-- Top Menu Bar: "fixed" stays on top, "static" moves with content -->
+    <!-- "navbar-inverse" inverts navbar bgcolor from normal bgcolor --> 
+      <div class="container-fluid">  <!-- Bootstrap 2-column nav & body, not fixed width-->
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">     <!-- Controls Navigation Bar including Collapse-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <!-- Provide the three white lines on the the collapsible button -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P M C</a> <!-- Left Corner App Title -->
+        </div>
+
+<!-- <div class="navbar col-md-1">
+
+</div> -->
+
+        <div class="nav navbar-collapse collapse">    
+        <!-- Collects and Controls Right Navigation for Collapsible Hamburger -->
+
+<!-- BEGIN EXPERIMENTAL NAVIGATION from Bootstrap-->
+<!-- <div class="row"> -->
+  <div class="nav col-sm-4 pull-right">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search A Wardrobe <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Sydney</a></li>
+          <li><a href="#">New York</a></li>
+          <li><a href="#">London</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Storage</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+<!--   </div> -->
+
+
+
+<!--           <form class="navbar-form navbar-right">  Deleted navbar-right
+  <input class="form-control" placeholder="Search My Clothing..." aligntype="search" >
+</form> -->
+
+
+          <ul class="nav  nav-pills "> <!-- navbar-nav navbar-right-->
+              <li class="dropdown">    
+
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    My Wardrobes <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">
+                          <span class="badge pull-right">0</span>
+                          Travel Bag</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li><a href="#">
+                          <span class="badge pull-right">25</span>
+                          Hong Kong</a></li>
+                      <li><a href="#">
+                          <span class="badge pull-right">100</span>
+                          Alaska</a></li>
+                  </ul>
+
+              <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Help <span class="caret"></span>
+                          </a>
+                  <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FAQs</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Site Map</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Report a Problem</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Support</a></li>
+                  </ul>
+<!--             <li><a href="#">Help</a></li> -->
+          </ul>
+
+        </div>
+   
+      </div>
+    </div>
+
+    <div class="container-fluid"> <!-- Side Menu Bar and Display Menu, Possibly Auto-hidden when screen is shrunk-->
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">   <!-- Controls width of sidebar DEFAULT:2-->
+
+<!-- EXPERIMENTAL ACCORDION INJECTION -->
+
+<h2 class="nav">Menu</h2>
+<div id="accordion">
+  <h3>Clothing Type</h3>
+              <div>                
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#">Tops
+                          <input type="checkbox" name="tops" value="checked">
+                          <span class="badge pull-right">78</span>
+                        </a></li>
+                        <li role="presentation"><a href="#">Bottoms
+                           <input type="checkbox" name="bottoms" value="checked">
+                           <span class="badge pull-right">9</span>
+                        </a></li>
+                        <li role="presentation"><a href="#">Kicks
+                           <input type="checkbox" name="footwear" value="">
+                           <span class="badge pull-right">17</span>
+                        </a></li>
+
+                    </ul>
+              </div>
+
+              <h3>Sort</h3>
+              <div>
+                        <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#">Color 
+                        </a></li>
+                        <li role="presentation"><a href="#">Style 
+                        </a></li>
+              </div>
+
+              <h3>Edit/View</h3>
+              <div>
+                        <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#">Brighten 
+                        </a></li>
+                        <li role="presentation"><a href="#">Crop 
+                        </a></li>
+              </div>
+
+              <h3>Social</h3>
+              <div>
+                        <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#">
+                            <span class="badge pull-right">25</span>Friends</a></li>
+                        <li role="presentation"><a href="#">Share</a></li>
+                        </ul>
+
+              </div>
+
+              <h3>Buy</h3>              
+              <div>
+                        <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#">Shop Online 
+                        </a></li>
+                        <li role="presentation"><a href="#">Shop Near You 
+                        </a></li>
+              </div>
+
+</div>                                                            <!-- END EXPERIMENTAL NAVIGATION -->
+
+                                                                
+
+
+        </div>
+
+
+                                                          <!-- END OLD NAVIGATION -->
+
+
+        <div class="col-sm-9 col-md-10 col-md-offset-2 main">   
+
+        <!-- Controls Main Display Section -->
+        <!-- "offset-X": offsets main area to the right, where X = col-md-X in sidebar above -->
+ 
+<div class="container-fluid">
+<!--           <h2 class="page-header">My Clothing</h2> -->
+
+          <div class="row placeholders">      <!-- Clothing Models Top-->
+
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<div class="container">
+
+  <div class="row">
+
+  </div>
+</div>
+
+<ul class="pager">
+  <li class="previous"><a href="#">&larr; </a></li>
+</ul>
+</div>
+
+
+
+            <div class="col-xs-6 col-sm-3 placeholder"> 
+              <h4>Clothing Sample 1</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+                    <a href="#" class="thumbnail">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Clothing Sample 2</h4>
+              <span class="text-muted">Brief Clothing Description</span>            
+                    <a href="#" class="thumbnail">            
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Clothing Sample 3</h4>
+              <span class="text-muted">Brief Clothing Description</span>            
+                    <a href="#" class="thumbnail">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+                    </a>
+
+            </div>
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+
+  <li class="next"><a href="#"> &rarr;</a></li>
+</ul> 
+</div>
+
+<!--             <div class="col-xs-6 col-sm-3 placeholder">
+        <a href="#" class="thumbnail">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+        </a>
+  <h4>Clothing Sample 4</h4>
+  <span class="text-muted">Brief Clothing Description</span>
+</div> -->
+          </div>
+
+          <div class="row placeholders">      <!-- Clothing Models Bottom-->
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+  <li class="previous"><a href="#">&larr; </a></li>
+<!--   <li class="next"><a href="#"> &rarr;</a></li> -->
+</ul> 
+</div>
+
+            <div class="col-xs-6 col-sm-3  placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample A</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample B</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
+              <h4>Clothing Sample C</h4>
+              <span class="text-muted">Brief Clothing Description</span>
+            </div>
+
+<div class="col-xs-1 col-sm-0 placeholder"> 
+<ul class="pager">
+
+  <li class="next"><a href="#"> &rarr;</a></li>
+</ul> 
+</div>           
+<!--             <div class="col-xs-6 col-sm-3 placeholder">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
+  <h4>Clothing Sample 4</h4>
+  <span class="text-muted">Brief Clothing Description</span>
+</div> -->
+          </div>
+</div>
+<!--           <h2 class="sub-header">Clothing Info/Specs</h2> -->  <!-- Bottom Sub-Header --> 
+          <!-- <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/jquery.js"></script>
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/bootstrap.js"></script>
+    <script src="Dashboard%20Template%20for%20Bootstrap_files/docs.js"></script>
+  
+
+</body></html>
