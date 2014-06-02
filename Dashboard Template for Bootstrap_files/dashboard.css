@@ -40,7 +40,11 @@ body {
     overflow-x: auto;  /*If auto, not "hidden", then Sidebar appears above content*/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. i.e. toggles scrollbar*/
+=======
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+>>>>>>> 0f71f3722d3841054f3cba32629dcd7c28f0ad32
 =======
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 >>>>>>> 0f71f3722d3841054f3cba32629dcd7c28f0ad32
