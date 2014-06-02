@@ -28,13 +28,14 @@
 
   $(function() {      //Beginning of Anonymous Function Wrapper for jQueryUI widgets
     
-    $( "#accordion" ).accordion({
+    $( "#accordion" ).accordion({  
       heightStyle: "content",
 
     })
 
+    $( "#draggable1" ).draggable({ snap: true, snapTolerance: "20", grid: [100, 100] });
 
-    
+    $( "#draggable2" ).draggable({ snap: true, snapTolerance: "20", grid: [100, 100] });    
 
     
     var availableTags = [
@@ -132,6 +133,8 @@
     );
   });
   </script>
+
+
   <style>
   body{
     font: 62.5% "Trebuchet MS", sans-serif;
@@ -171,22 +174,20 @@
   .fakewindowcontain .ui-widget-overlay {
     position: absolute;
   }
+
+
+  /*DEFINES DRAGGABLE BOX DIMENSIONS, POSITION*/
+  .draggable { width: 210px; height: 210px; padding: 0px; float: ; margin: 0 0px 0px 0; }
+
+  /*DEFINES SNAP TARGET DIMENSIONS, POSITION*/
+  .ui-widget-header p, .ui-widget-content p { margin: 0; }
+  #snaptarget { height: 140px; }   
+
+
   </style>
 
-<!-- 1.  DRAGGABLE OBJECTS Can't really test, looks the same a drag-and-drop -->
 
-<!-- 2.  ACCORDIAN MENU -->
- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script>
-$(function() {
-$( "#accordion" ).accordion({
 
-});
-});
-</script>
 
 
 
@@ -391,21 +392,32 @@ $( "#accordion" ).accordion({
 
 
             <div class="col-xs-6 col-sm-3 placeholder"> 
+      
+<div id="draggable1" class="draggable ui-widget-content">
+
               <h4>Clothing Sample 1</h4>
               <span class="text-muted">Brief Clothing Description</span>
                     <a href="#" class="thumbnail">
               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200">
                     </a>
 
+</div>
+
             </div>
+
             <div class="col-xs-6 col-sm-3 placeholder">
+
+<div id="draggable2" class="draggable ui-widget-content">            
               <h4>Clothing Sample 2</h4>
               <span class="text-muted">Brief Clothing Description</span>            
                     <a href="#" class="thumbnail">            
               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=" data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200">
                     </a>
 
+</div>
+            
             </div>
+
             <div class="col-xs-6 col-sm-3 placeholder">
               <h4>Clothing Sample 3</h4>
               <span class="text-muted">Brief Clothing Description</span>            
